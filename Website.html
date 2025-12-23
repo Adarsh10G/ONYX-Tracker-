@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONYX TRACKER | Premium Habit Tracking System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-bg { background: radial-gradient(circle at top right, #1e1b4b, #000000); }
+        .btn-glow:hover { box-shadow: 0 0 20px rgba(79, 70, 229, 0.6); }
+    </style>
+</head>
+<body class="gradient-bg text-gray-100 font-sans leading-relaxed">
+
+    <nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter italic">ONYX <span class="text-indigo-500">TRACKER</span></div>
+        <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+            <a href="#features" class="hover:text-indigo-400 transition text-xs">Features</a>
+            <a href="#preview" class="hover:text-indigo-400 transition text-xs">Preview</a>
+            <a href="#contact" class="hover:text-indigo-400 transition text-xs">Contact</a>
+        </div>
+        <a href="#pricing" class="bg-indigo-600 px-5 py-2 rounded-full text-sm font-bold btn-glow transition uppercase tracking-tighter">Get Tracker</a>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="inline-block px-4 py-1 mb-6 border border-indigo-500/30 rounded-full bg-indigo-500/10 text-indigo-400 text-sm font-bold" data-aos="fade-down">
+            2026 ULTIMATE EDITION IS HERE
+        </div>
+        
+        <div class="flex items-center justify-center">
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-none uppercase tracking-tighter" data-aos="fade-up">
+                DISCIPLINE IS <br><span class="text-indigo-500">NON-NEGOTIABLE.</span>
+            </h1>
+        </div>
+
+        <p class="max-w-xl text-gray-400 text-lg md:text-xl mb-10" data-aos="fade-up" data-aos-delay="100">
+            Stop guessing your progress. Use the pro-grade Google & Excel system used by high-performers to track coding, gym, and study streaks.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="#pricing" class="bg-white text-black px-10 py-4 rounded-xl font-bold text-lg hover:bg-indigo-100 transition shadow-xl">Start Your Streak</a>
+            <a href="#preview" class="glass px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/5 transition">Watch Preview</a>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 px-6 bg-black/40">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Built for Every Goal</h2>
+                <p class="text-gray-500 italic">"The chains of habit are too weak to be felt until they are too strong to be broken."</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl" data-aos="fade-right">
+                    <i data-lucide="code" class="text-indigo-500 w-12 h-12 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-3">Coding & Tech</h3>
+                    <p class="text-gray-400">Track LeetCode problems, GitHub commits, and project hours with automated logic.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl" data-aos="fade-up">
+                    <i data-lucide="dumbbell" class="text-indigo-500 w-12 h-12 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-3">Gym & Physical</h3>
+                    <p class="text-gray-400">Integrated weight tracking and streak counters for your daily workout sessions.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl" data-aos="fade-left">
+                    <i data-lucide="book-open" class="text-indigo-500 w-12 h-12 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-3">Deep Study</h3>
+                    <p class="text-gray-400">Pomodoro-style logging and focus-time visualization for students and researchers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="preview" class="py-24 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6">Elegant Dashboard UI</h2>
+        <p class="text-gray-400 mb-10 italic">Previewing the Onyx System...</p>
+        <div class="max-w-4xl mx-auto glass rounded-3xl p-2 relative shadow-2xl shadow-indigo-500/20" data-aos="zoom-in">
+            <video id="trackerVideo" class="w-full rounded-2xl cursor-pointer" >
+    <source src="onyx-preview.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+            
+            <button id="playBtn" class="absolute inset-0 m-auto w-20 h-20 bg-indigo-600/80 rounded-full flex items-center justify-center hover:bg-indigo-500 transition shadow-2xl">
+                <i data-lucide="play" id="playIcon" class="fill-white w-8 h-8"></i>
+            </button>
+        </div>
+    </section>
+<section id="pricing" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-12 uppercase tracking-tighter" data-aos="fade-up">Start Your Evolution</h2>
+            <div class="glass p-8 md:p-12 rounded-[3rem] border-2 border-indigo-500 relative shadow-2xl shadow-indigo-500/10">
+                <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-indigo-500 text-white px-6 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Best Value</div>
+                
+                <h3 class="text-2xl mb-4 font-bold tracking-widest uppercase">ONYX ULTIMATE BUNDLE</h3>
+                <div class="text-7xl font-black mb-8 text-white">₹49 <span class="text-xl text-gray-500 font-normal">/ Lifetime</span></div>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="relative group" data-aos="zoom-in">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                        
+                        <div class="relative bg-white p-6 rounded-3xl shadow-2xl">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-black text-[10px] font-black uppercase tracking-widest">Step 1: Scan & Pay</span>
+                                <div class="flex space-x-1">
+                                    <div class="w-2 h-2 rounded-full bg-red-400"></div>
+                                    <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+                                    <div class="w-2 h-2 rounded-full bg-green-400"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-2 rounded-xl border border-gray-100">
+                                <img src="qr-code.jpeg" alt="Scan to Pay" class="w-full h-auto rounded-lg mx-auto">
+                            </div>
+                            
+                            <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-center space-x-2">
+                                <i data-lucide="shield-check" class="text-indigo-600 w-4 h-4"></i>
+                                <p class="text-gray-500 text-[9px] font-bold uppercase tracking-tighter">Verified Merchant: ONYX</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-left space-y-6">
+                        <div class="space-y-3 text-gray-300">
+                            <div class="flex items-center"><i data-lucide="check" class="text-green-500 mr-3 w-5 h-5"></i> Google Sheets Online</div>
+                            <div class="flex items-center"><i data-lucide="check" class="text-green-500 mr-3 w-5 h-5"></i> Habit Analytics Charts</div>
+                            <div class="flex items-center"><i data-lucide="check" class="text-green-500 mr-3 w-5 h-5"></i> 24/7 WhatsApp Service</div>
+                        </div>
+
+                        <div class="border-t border-white/10 pt-6">
+                            <p class="text-xs text-indigo-400 font-bold mb-4 uppercase tracking-widest">Step 2: Send Screenshot + Email</p>
+                            <a href="https://wa.me/9354054695?text=PAID%20₹49.%20Attached%20is%20my%20screenshot.%20My%20Email%20ID%20is:%20" 
+                               class="block w-full bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-xl font-bold text-center btn-glow transition uppercase text-sm shadow-lg shadow-indigo-500/20">
+                                Send Details & Get Link
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="mt-8 text-gray-500 text-[10px] uppercase tracking-widest italic">Link will be sent to your WhatsApp after verification.</p>
+            </div>
+        </div>
+    </section>
+
+          
+     
+    <section id="contact" class="py-24 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4 uppercase tracking-widest text-indigo-400">Direct Support</h2>
+        <p class="text-gray-400 mb-10">One click to reach me. No calls, just results.</p>
+        <a href="https://wa.me/9354054695?text=Hi%20OnyxTracker%20Support!%20I%20have%20a%20question." 
+           class="inline-flex items-center glass px-12 py-6 rounded-full font-black text-2xl hover:bg-green-600 transition group border-green-500/20 shadow-xl shadow-green-500/10">
+            <i data-lucide="message-circle" class="mr-4 text-green-500 group-hover:text-white"></i>
+            WHATSAPP ME
+        </a>
+        <p class="mt-6 text-xs text-gray-500 uppercase tracking-widest">No calls. Fast chat response only</p>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 text-center">
+        <div class="text-xl font-bold mb-4 italic uppercase">ONYX<span class="text-indigo-500">TRACKER</span></div>
+        <div class="text-xs text-gray-600 tracking-widest">© 2026 ONYX TRACKER. ALL RIGHTS RESERVED.</div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init Animations
+        AOS.init({ duration: 800, once: true });
+        lucide.createIcons();
+
+        // Video Control Logic
+        const video = document.getElementById('trackerVideo');
+        const playBtn = document.getElementById('playBtn');
+
+        playBtn.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+                playBtn.style.opacity = '0';
+            } else {
+                video.pause();
+                playBtn.style.opacity = '1';
+            }
+        });
+
+        video.addEventListener('click', () => {
+            if (!video.paused) {
+                video.pause();
+                playBtn.style.opacity = '1';
+            }
+        });
+
+        video.onended = () => { playBtn.style.opacity = '1'; };
+    </script>
+</body>
+</html>
